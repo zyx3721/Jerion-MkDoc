@@ -1,4 +1,4 @@
-# docker部署django
+# docker 部署django
 
 ## （1）django安装目录结构
 

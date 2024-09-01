@@ -1,4 +1,4 @@
-# TTS-Server语音+Legado阅读
+# 配置 TTS-Server语音+Legado阅读
 
 
 

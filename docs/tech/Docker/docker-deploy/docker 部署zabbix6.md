@@ -1,4 +1,4 @@
-# docker部署zabbix6
+# docker 部署zabbix6
 
 创建zabbix网络
 ```

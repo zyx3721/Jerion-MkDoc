@@ -1,3 +1,7 @@
+# docker 部署jupyter
+
+
+
 ## 1.搜索镜像
 
 `docker search jupyter`: 命令用于在 Docker Hub 上搜索名为 "jupyter" 的镜像。搜索结果显示了一个名为 "jupyter/datascience-notebook" 的镜像，它是一个包含了数据科学 Jupyter 笔记本的 Python 栈。

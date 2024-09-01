@@ -1,4 +1,4 @@
-# docker部署redis
+# docker 部署redis
 
 Redis是一款开源的高性能键值存储数据库，广泛应用于缓存、队列、实时分析等场景。使用Docker部署Redis可以简化安装和配置过程，提高部署效率。本文将介绍如何使用Docker部署Redis，并提供更详细的扩展内容，让你能够更好地理解和应用Redis。
 
