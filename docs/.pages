@@ -2,6 +2,7 @@ title: "Hello"
 
 nav:
     - 首页: index.md
+    - 博客: blog
     - Linux: linux
     - Shell: shell
     - VMware: vmware
@@ -13,5 +14,4 @@ nav:
     - 批处理: bat
     - K8S: k8s
     - Git: git
-    - 博客: blog
     - 随笔: essay
