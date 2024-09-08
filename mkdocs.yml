@@ -122,7 +122,7 @@ plugins:   # 配置MkDocs的插件
         as_creation: "date"   # 将文章的创建日期视为发布日期
         as_update: "date"   # 将文章的更新日期视为发布日期
       abstract_chars_count: -1   # 设置摘要的字符数限制
-      match_path: "(blog/posts|flinks|galaxy|message|note|readme|tech|yuque)/.*"   # RSS订阅包含的路径模式
+      match_path: "(blog|flinks|galaxy|message|note|readme|tech|yuque)/.*"   # RSS订阅包含的路径模式
   - glightbox:   # 启用gLightbox插件
       auto_caption: false   # 自动生成图片标题
       caption_position: bottom   # 图片标题显示在底部
