@@ -24,7 +24,7 @@ git_pull(){
         echo_log_info "Code pulled successfully"
     fi
 
-    rm -rf /tmp/mkdosc_* && systemctl restart mkdocs
+    rm -rf /tmp/mkdocs_* && systemctl restart mkdocs
     [ $? -eq 0 ] && echo_log_info "Mkdocs Service restart successfully!" || echo_log_error "Mkdocs Service restart fail!"
 }
 
