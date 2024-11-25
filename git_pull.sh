@@ -11,7 +11,7 @@ echo_log_error() {
     exit 1
 }
 
-git_pull(){
+git_pull() {
     cd /data/Mkdocs-material/Jerion-Mkdocs
     if ! git pull origin master >/dev/null 2>&1; then
         # 如果拉取失败，发送 webhook 通知
