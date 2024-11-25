@@ -168,3 +168,4 @@ extra_javascript:
   - js/mathjax.js   # 引用自定义的JS文件，这里用于数学公式显示的 MathJax 配置
   - https://polyfill.io/v3/polyfill.min.js?features=es6   # 加载 Polyfill.io 提供的 Polyfill 脚本，用于在不支持 ES6 特性的浏览器中实现这些功能
   - https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js   # 加载 MathJax 库的一个特定版本的 JavaScript 文件，用于在网页上渲染数学公式
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
