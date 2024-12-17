@@ -1,0 +1,38 @@
+- name: Synchronize Model Test
+  hosts: centos7
+  become: true
+  tasks: 
+    - name: Remote ensure rsync is installed
+      yum:
+        name: rsync
+        state: present
+
+    - name: Local ensure rsync is installed
+      yum:
+        name: rsync
+        state: present
+      delegate_to: localhost
+
+    - name: Copy the Remote /etc directory to /tmp in the Localhost
+      synchronize:
+        src: /etc
+        dest: /tmp/
+        recursive: yes
+    
+    - name: Copy the Remote /etc/services file to /tmp in the Localhost
+      synchronize:
+        src: /etc/services
+        dest: /tmp 
+        mode: pull
+
+    - name:  Copy the Local /root/scripts/check_linux.sh  to the Remote /tmp directory
+      synchronize:
+        src: /root/scripts/check_linux.sh
+        dest: /tmp
+        mode: push
+    
+    - name: Copy the Local /root/scripts to the Remote /tmp directory
+      synchronize:
+        src: /root/scripts
+        dest: /tmp
+        mode: push

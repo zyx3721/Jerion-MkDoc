@@ -1,0 +1,11 @@
+- name: Check disk space
+  hosts: all
+  tasks:
+    - name: Disk free space
+      command: df -Th
+      register: disk_space
+
+    - name: Show disk space
+      debug:
+        #msg: "{{ disk_space.stdout }}"
+        var: disk_space.stdout_lines
